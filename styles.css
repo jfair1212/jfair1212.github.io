@@ -1,0 +1,144 @@
+main {
+    margin: 350px;
+    margin-top: 100px;
+}
+body {
+    margin: 0%;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #222;
+}
+
+.enhancement-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 16px;
+}
+
+.enhancement-title {
+    grid-row: 1;
+    grid-column: 1 / 3;
+    width: fit-content;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.enhancement-img {
+    grid-row: 2 / 5;
+    grid-column: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.enhancement-ps {
+    grid-row: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.enhancement-btns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.co-title {
+    text-align: center;
+}
+
+
+.enhancement-btn {
+    flex: 1;
+    height: 75px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #222;
+    text-decoration: none;
+    border: 2px solid #222;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in,
+                color 0.3s ease-in,
+                border-radius 0.3s ease-in;
+}
+
+.enhancement-btn:hover {
+    background-color: #222;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+li {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 1em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    font-family: "Oswald", sans-serif;
+    background: #f4f4f4;
+    padding: 1.5rem 1rem;
+    margin-bottom: 3rem;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+a {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+section {
+    padding-bottom: 4em;
+    border-bottom: 5px solid black;
+    border-radius: 5px;
+}
+
+.eh-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.eh-3 h2 {
+    text-align: center;
+}
+
+.enhancement-btns-eh3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.enhancement-btns-eh3 .enhancement-btn {
+    flex: none;
+    width: 200px;
+}
