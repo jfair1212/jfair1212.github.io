@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "311162858114",
+    "project_id": "capstone-project-be885",
+    "storage_bucket": "capstone-project-be885.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311162858114:android:3485a9db811b4102a1629b",
+        "android_client_info": {
+          "package_name": "com.example.cs360projectjustinfaircloth"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQtQ2aMV7z-9xM1ASg-iTLawYJ0hR1aHw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
