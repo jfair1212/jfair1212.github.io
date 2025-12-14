@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">   
+        <Title>Justin Faircloth Capstone</Title>
+    </head>
+
+    <body>
+        <header>
+            <h1>CS-499 ePortfolio | Justin Faircloth</h1>
+            <div class="sub-header">
+                <a href="https://github.com/jfair1212/jfair1212.github.io">View on Github</a>
+                <a href="https://www.youtube.com/watch?v=DwEyXB6B7Gs">Code Review</a>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h2>Introduction and Self-Assessment</h2>
+                <p>My name is Justin Faircloth and I started the Computer Science Bachelor’s Degree at SNHU in 2023. Before that, I started with a small interest in programming, which I fanned by experimenting with web development and creating webpages. After a handful of tutorials and small projects utilizing HTML, CSS, and JavaScript, I decided to pursue this degree and here I am! Balancing a full time job and being a full-time student was challenging, but I have expanded my knowledge and skills substantially. However, the process of learning and developing never stops. I’ve found that I very much enjoy creating apps and webpages, but I also have also dreamed of becoming a game developer. </p>
+                <p>My time in the Computer Science Program at Southern New Hampshire University has helped me work towards my goal of becoming a software developer by giving me hands-on experience with multiple programming languages as well as practice testing, debugging, and finalizing code to meet functional and technical requirements. I’ve had exposure to developing both object-oriented and front-end project structures. In addition to the technical proficiency I’ve gathered, I’ve also gained experience in problem solving and adaptability in pursuit of meeting project specifications. Additionally, I’ve become better at receiving results and feedback and factoring those into a better, more refined product.</p>
+                <p>In addition to the aforementioned languages, my experience in this degree has familiarized me with Python, C++, Java, and XML along with the specific frameworks Node.js and Angular. Additionally, I gained proficiency in executing full CRUD operations with databases such as MongoDB and Firestore. I've used both SQL databases and NoSQL database structures.</p>
+                <p>For my Computer Science Capstone, I decided to enhance my final project from CS-360: an event tracking app written with Java and XML in Android Studio. The original application allowed users to create an account and schedule events. These events contained a date, time, title, and description and were stored according to the user. Users were able to edit and delete existing events, providing full CRUD functionality within the application. On the back-end, the application used a SQLite local database to hold the user/event information.</p>
+            </section>
+            <section class="course-outcomes">
+                <h2 class="co-title">Course Outcomes</h2>
+                <p>My Capstone enabled me to show proficiency in the following course outcomes:</p>
+                <ol>
+                    <li>Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science.</li>
+                    <li>Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts</li>
+                    <li>Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices</li>
+                    <li>Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals</li>
+                    <li>Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources</li>
+                </ol>
+            </section>
+            <section class="enhancement-container">
+                <h2 class="enhancement-title">Enhancement One: Calendar View</h2>
+                <img src="images\calendar_example.png" alt="screenshot of calendar view in application, showing days with a scheduled event" class="enhancement-img">
+                <div class="enhancement-ps">
+                    <p><strong>Original State: </strong> Initially, the main screen of the application included a RecyclerView that held a scrolling list of each event scheduled by the user, sorted by date. Each event showed in the form of a card that held all the event's information as well as options to edit or delete each event.</p>
+                    <p><strong>Enhancement: </strong>To increase user-friendliness, I replaced the scrolling list with a CalendarView. The database was queried and each date with a scheduled event was given a visual marker through the use of the Calendar external library by Kizitonwose. Each day can be clicked on, which will take the user to a screen that displays that day's events in a similar event card fashion. From there, the event information and edit/delete options are open to the user as before.</p>
+                    <p><strong>Skills Displayed: </strong>This enhancement displayed my ability to refactor my project from a RecyclerView scrolling list to a CalendarView while still maintaining functionality. It also displayed my ability to integrate an external library to acheive my project goals. </p>
+                    <div class="enhancement-btns">
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Enhancement%20Narratives" class="enhancement-btn">Narrative</a>
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Original%20Artifact" class="enhancement-btn">Original Artifact</a>
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Enhanced%20Artifact" class="enhancement-btn">Enhanced Artifact</a>
+                    </div>
+                </div>
+            </section>
+
+            <section  class="enhancement-container">
+                <h2  class="enhancement-title">Enhancement Two: Search Feature</h2>
+                <img src="images\search_example.png" alt="screenshot of search feature in application, showing search bar and results" class="enhancement-img">
+                <div class="enhancement-ps">
+                    <p><strong>Original State: </strong>Prior to this feature, the user had to  manually scroll through their calendar events to find a specific one. There was no alternative method to filtering and searching events. As the user's event list grew, this became increasingly inefficient. Searching for specific events could become time consuming and negatively impact overall usability.</p>
+                    <p><strong>Enhancement: </strong> I implemented a dedicated search screen with a search bar at the top. Each keystroke in the search bar sends a query to the database, searching for any events that include the user's query in its title or description. Each matching event is presented in the same event card fashion inside of a scrolling list. If no matching events are found, a corresponding message is displayed to notify the user.</p>
+                    <p><strong>Skills Displayed: </strong>This section displays my ability to provide new functionality through XML and Java. I showed that I can handle database querying for specific text while maintaining a dynamic and responsive UI to increase user satisfaction and efficiency.</p>
+                    <div class="enhancement-btns">
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Enhancement%20Narratives" class="enhancement-btn">Narrative</a>
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Original%20Artifact" class="enhancement-btn">Original Artifact</a>
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Enhanced%20Artifact" class="enhancement-btn">Enhanced Artifact</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="eh-3">
+                <h2>Enhancement Three: Firebase</h2>
+                <p><Strong>Original State: </Strong>The application initially relied on a locally stored SQLite database. This satisfied the initial project requirements but limited any user's access to their account to just one device which is unrealistic for consumer use. The database schema originally held a table for users and one for events. The users table held user credentials while the events table held all other information for the events with each event linked to a user by a user_id.</p>
+                <p><Strong>Enhancement: </Strong>I replaced the local SQLite database with Firebase. Specifically, I used Firebase Authentication to handle user log-in/sign up and Firestore for the event storage. Full functionality of the application was retained through this switch. This enables cross-device access of a user's account as well as increased security through Firebase Authentication and Firestore.</p>
+                <p><Strong>Skills Displayed: </Strong>I displayed my ability to refactor my application to integrate a new database while without affecting performance. Additionally, I increased the application's sceurity measures through Authentication's built-in hashing and user validation. Alongside that, Firestore has built in data security measures as well.</p>
+                <div class="enhancement-btns-eh3">
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Enhancement%20Narratives" class="enhancement-btn">Narrative</a>
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Original%20Artifact" class="enhancement-btn">Original Artifact</a>
+                        <a href="https://github.com/jfair1212/jfair1212.github.io/tree/main/Enhanced%20Artifact" class="enhancement-btn">Enhanced Artifact</a>
+                    </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            © 2025 Justin Faircloth. All rights reserved.
+        </footer>
+    </body>
+    
+
+</html>
